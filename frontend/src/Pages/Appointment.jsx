@@ -6,10 +6,10 @@ const Appointment = () => {
   return (
     <>
       <Hero
-        title={"Schedule Your Appointment | ZeeCare Medical Institute"}
+        title={"Schedule Your Appointment | at MKHospital"}
         imageUrl={"/signin.png"}
       />
-      <AppointmentForm/>
+      <AppointmentForm />
     </>
   );
 };

@@ -22,8 +22,8 @@ const userSchema = new mongoose.Schema({
   phone: {
     type: String,
     required: [true, "Phone Is Required!"],
-    minLength: [11, "Phone Number Must Contain Exact 11 Digits!"],
-    maxLength: [11, "Phone Number Must Contain Exact 11 Digits!"],
+    minLength: [10, "Phone Number Must Contain Exact 10 Digits!"],
+    maxLength: [10, "Phone Number Must Contain Exact 10 Digits!"],
   },
   nic: {
     type: String,
@@ -51,7 +51,7 @@ const userSchema = new mongoose.Schema({
     required: [true, "User Role Required!"],
     enum: ["Patient", "Doctor", "Admin"],
   },
-  doctorDepartment:{
+  doctorDepartment: {
     type: String,
   },
   docAvatar: {

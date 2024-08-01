@@ -43,9 +43,6 @@ const Footer = () => {
         <hr />
         <div className="content">
           <div>
-            <img src="/logo.png" alt="logo" className="logo-img"/>
-          </div>
-          <div>
             <h4>Quick Links</h4>
             <ul>
               <Link to={"/"}>Home</Link>
@@ -63,21 +60,6 @@ const Footer = () => {
                 </li>
               ))}
             </ul>
-          </div>
-          <div>
-            <h4>Contact</h4>
-            <div>
-              <FaPhone />
-              <span>999-999-9999</span>
-            </div>
-            <div>
-              <MdEmail />
-              <span>zeelab@gmail.com</span>
-            </div>
-            <div>
-              <FaLocationArrow />
-              <span>Karachi, Pakistan</span>
-            </div>
           </div>
         </div>
       </footer>

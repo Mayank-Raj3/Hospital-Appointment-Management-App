@@ -4,6 +4,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import axios from "axios";
 import { toast } from "react-toastify";
 import { Context } from "../main";
+import { FaHospitalSymbol } from "react-icons/fa";
 
 const Navbar = () => {
   const [show, setShow] = useState(false);
@@ -33,10 +34,13 @@ const Navbar = () => {
     <>
       <nav className={"container"}>
         <div className="logo">
-          <img src="/logo.png" alt="logo" className="logo-img" />
+          <FaHospitalSymbol className="logo-img" />
         </div>
         <div className={show ? "navLinks showmenu" : "navLinks"}>
           <div className="links">
+            <Link to={"http://localhost:8000"} onClick={() => setShow(!show)}>
+              Try Virtual Doc
+            </Link>
             <Link to={"/"} onClick={() => setShow(!show)}>
               Home
             </Link>
